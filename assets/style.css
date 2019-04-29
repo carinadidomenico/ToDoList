@@ -1,0 +1,63 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(90deg, #e0c3fc, #8ec5fc);
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 10px;
+    margin-bottom: 0;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.671);
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 90vw;
+    margin: auto;
+}
+
+.escrever {
+    display: flex;
+    flex-direction: column;
+}
+
+#add {
+    width: 100%;
+    color: white;
+    background-color: #ba7af8;
+    padding: 12px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.texto {
+    height: 15vh;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+}
+
+.check {
+    width: 30px;
+    height: 30px;    
+}
+
+label {
+    font-size: 18px;
+}
+
+.marcar {
+    display: none;
+    align-items: center;
+}
+
+.tarefas p {
+    border: 1px solid rgba(128, 128, 128, 0.671);
+    font-size: 30px; 
+    padding: 15px;
+    margin: 0;
+}
