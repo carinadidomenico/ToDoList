@@ -14,17 +14,21 @@
             <h1>Adicione uma nova tarefa</h1>
         </div>
         <div class="escrever">
-            <input id="digitar" class="texto" type="text" placeholder="Escreva sua tarefa aqui.">
-            <button id="add">ADD</button>
+            <input id="texto" class="texto" type="text" placeholder="Escreva sua tarefa aqui.">
+            <button id="btn">ADD</button>
         </div>
-        <div id="tarefas" class="tarefas"></div>
-        <div class="marcar">
-            <input class="check" type="checkbox" name="todas" id="marcarTodas">
-            <label for="todas">Marque todas as opções</label>
+        <div class="tarefas" id="tarefas">
+            <ul></ul>
         </div>
-        <div id="limpar" class="marcar">
-            <input class="check" type="checkbox" name="todas" id="limpar">
-            <label for="todas">Excluir todos os itens da lista</label>
+        <div id="opcoes">
+            <div class="marcar">
+                <input id="marcar" class="check" type="checkbox" name="limpar" id="marcarTodas">
+                <label for="todas">Marque todas as opções</label>
+            </div>
+            <div class="marcar">
+                <input id="limpar" class="check" type="checkbox" name="todas" id="limpar">
+                <label for="todas">Excluir todos os itens da lista</label>
+            </div>
         </div>
     </section>
     <script src="assets/script.js"></script>    
