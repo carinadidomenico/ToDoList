@@ -84,20 +84,21 @@ label {
     float: right;
     cursor: pointer;
     width: 32px;
+    filter: grayscale();
 }
 
 #tarefas li span {
     display: flex;
     align-items: center;
-    filter: grayscale();
 }
-/* 
-.tarefas li span:hover {
+
+.fechar:hover {
     filter: none;
-} */
+    transition-duration: 1s;
+}
 
 @media (min-width: 600px) {
     .container {
-        width: 50vvw;
+        width: 50vw;
     }
 }

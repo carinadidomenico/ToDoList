@@ -9,7 +9,7 @@ let tarefas = document.querySelector('#tarefas ul');
 btn.addEventListener('click', function () {
     if (texto.value == false)
     return;
-    tarefas.innerHTML += `<li class="item" id="li" onclick="ticar(this)"> ${texto.value} <span onclick="excluir(this)"><img class="fechar" src="assets/img/error.png" alt="fechar"><span></li>`;
+    tarefas.innerHTML += `<li  class="item" id="li" onclick="ticar(this)"> ${texto.value} <span onclick="excluir(this)"><img class="fechar" src="assets/img/error.png" alt="fechar"><span></li>`;
     texto.value = "";
     opcoes.style.display = 'flex';
 })
@@ -42,8 +42,6 @@ marcar.addEventListener ('click', function(){
     item.forEach(function(elemento){
         elemento.classList.toggle ('ticarTarefa');
         marcar.checked = false; 
-    })
-    
+    });
 })
-
 
