@@ -17,6 +17,7 @@ h1 {
     background-color: rgb(255, 255, 255);
     width: 90vw;
     margin: auto;
+    border-radius: 10px;
 }
 
 .escrever {
@@ -32,6 +33,9 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     border: none;
+    word-break: break-all;
+    border-radius: 0 0 10px 10px;
+    transition-duration: 0.5s;
 }
 
 .texto {
@@ -41,23 +45,22 @@ h1 {
     border: none;
 }
 
-.check {
-    width: 30px;
-    height: 30px;   
-}
-
 label {
     font-size: 18px;
 }
 
 .marcar {
-    display: flex;
-    align-items: center;
+    margin: 3vh;
+}
+
+.marcar img {
+    width: 6vh;
+    cursor: pointer;
 }
 
 #opcoes {
     display: none;
-    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .ticarTarefa {
@@ -71,15 +74,17 @@ label {
 }
 
 #tarefas li {
-    border: 1px solid rgba(128, 128, 128, 0.671);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.671);
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 30px;
     padding: 15px;
     margin: 0;
-
+    cursor: grab;
+    transition-duration: 0.5s;
 }
+
 .fechar{
     float: right;
     cursor: pointer;
@@ -94,7 +99,17 @@ label {
 
 .fechar:hover {
     filter: none;
+    cursor: pointer;
     transition-duration: 1s;
+}
+
+#tarefas li:hover {
+    background-color: #b97af857;
+}
+
+#btn:hover {
+    background-color: #5702ac;
+    transition-duration: 0.5s;
 }
 
 @media (min-width: 600px) {

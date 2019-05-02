@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/img/4005list.ico" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <title>To Do List</title>
@@ -13,21 +14,19 @@
         <div>
             <h1>Adicione uma nova tarefa</h1>
         </div>
-        <div class="escrever">
-            <input id="texto" class="texto" type="text" placeholder="Escreva sua tarefa aqui.">
-            <button id="btn">ADD</button>
-        </div>
+        <form id="form" class="escrever">
+            <input id="texto" class="texto" type="text" placeholder="Escreva sua tarefa aqui." autocomplete="off">
+            <input type="submit" value="ADD" id="btn">
+        </form>
         <div class="tarefas" id="tarefas">
             <ul></ul>
         </div>
         <div id="opcoes">
             <div class="marcar">
-                <input id="marcar" class="check" type="checkbox" name="limpar" id="marcarTodas">
-                <label for="todas">Marque todas as opções</label>
+                <img id="marcarTodas" src="assets/img/marcar.png" alt="Marque todas" title="Marcar todas">
             </div>
             <div class="marcar">
-                <input id="limpar" class="check" type="checkbox" name="todas" id="limpar">
-                <label for="todas">Excluir todos os itens da lista</label>
+                <img id="limpar" class="check" src="assets/img/excluir.png" alt="Excluir todos" title="Excluir todos">
             </div>
         </div>
     </section>
