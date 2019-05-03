@@ -33,7 +33,7 @@ function ticar(elemento) {
 
 function excluir(elemento) {
     elemento.parentElement.remove();
-    
+
 }  
 
 //Apagar todos os elementos
@@ -83,8 +83,7 @@ tarefas.addEventListener("dragend", dragEnd);
 
 function dragStart (evento) {
     dragging = evento.target.closest(".item");
-    // item.style.opacity = '0.9';
-    // item.style.backgroundColor = "#ba7af8";
+    item.style.cursor = 'grabbing';
 }
 
 
@@ -94,13 +93,10 @@ function dragOver(evento) {
     evento.preventDefault ();
     const location = evento.target.closest(".item");
     this.insertBefore(dragging, location); // this. equivale a class timeline
-    this.style.opacity = '0.5';
-    this.style.opacity = '1';
+    this.style.cursor = "grabbing";
 }
 
 function dragEnd(evento) {
     dragging = null;
-    this.style.backgroundColor = "white";
     //usamos o dragging = null para dizer que deve parar o movimento
-
 }

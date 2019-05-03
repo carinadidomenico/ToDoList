@@ -121,6 +121,10 @@ label {
     background-color: #b97af857;
 }
 
+#tarefas li:active {
+    cursor: grabbing;
+}
+
 #btn:hover {
     background-color: #5702ac;
     transition-duration: 0.5s;
