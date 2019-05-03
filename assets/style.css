@@ -63,6 +63,20 @@ label {
     justify-content: space-evenly;
 }
 
+#marcarTodas {
+    display: none;
+    width: 7vh;
+}
+
+#desmarcarTodas {
+    display: none;
+    width: 7vh;
+}
+
+#limpar {
+    display: none;
+}
+
 .ticarTarefa {
     text-decoration: line-through;
     color: gray;
