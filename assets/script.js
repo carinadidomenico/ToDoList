@@ -8,6 +8,7 @@ let tarefas = document.querySelector('#tarefas ul');
 let item = document.querySelectorAll ('#li');
 let opcoes = document.querySelector ('#opcoes');
 
+
 //Adicionar as tarefas
 
 form.addEventListener('submit', function (evento) {
